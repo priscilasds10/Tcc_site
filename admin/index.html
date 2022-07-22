@@ -1,0 +1,54 @@
+<?php
+include ('parciais/menu.php');
+?>
+    <!--menu termina aqui-->
+
+     <!--menu content começa aqui-->
+     <div class="main-content">
+       <div class="linha">
+   
+       <h1>Painel de controle</h1>
+       
+        <?php 
+       if(isset($_SESSION['login'])){
+           echo $_SESSION['login'];
+           unset ($_SESSION['login']);
+       }
+       ?>
+       
+       
+       
+    <div class="col-4 text-center">
+        <h1 >5</h1>
+            <br>
+             categoria
+            </div>
+
+            <div class="col-4 text-center">
+        <h1 >5</h1>
+            <br>
+             categoria
+            </div>
+
+            <div class="col-4 text-center">
+        <h1 >5</h1>
+            <br>
+             categoria
+            </div>
+
+            <div class="col-4 text-center">
+        <h1 >5</h1>
+            <br>
+             categoria
+            </div>
+
+            <div class="clearfix"></div>
+
+          </div>
+     </div>
+    <!--menu content termina aqui-->
+
+    <?php 
+include('parciais/footer.php');
+?>
+    
